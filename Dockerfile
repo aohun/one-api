@@ -4,7 +4,7 @@ WORKDIR /build
 COPY ./web .
 COPY ./VERSION .
 RUN npm install
-RUN REACT_APP_VERSION=$(cat VERSION) npm run build
+RUN REACT_APP_VERSION="0.2.0" npm run build
 
 FROM golang AS builder2
 
@@ -16,7 +16,7 @@ WORKDIR /build
 COPY . .
 COPY --from=builder /build/build ./web/build
 RUN go mod download
-RUN go build -ldflags "-s -w -X 'one-api/common.Version=$(cat VERSION)' -extldflags '-static'" -o one-api
+RUN go build -ldflags "-s -w -X 'one-api/common.Version=0.2.0' -extldflags '-static'" -o one-api
 
 FROM alpine
 

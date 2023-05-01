@@ -30,10 +30,10 @@ const About = () => {
           about === '' ? <>
             <Header as='h3'>关于</Header>
             <p>可在设置页面设置关于内容，支持 HTML & Markdown</p>
-            项目仓库地址：
-            <a href="https://github.com/songquanpeng/one-api">
-              https://github.com/songquanpeng/one-api
-            </a>
+            {/*项目仓库地址：*/}
+            {/*<a href="https://github.com/songquanpeng/one-api">*/}
+            {/*  https://github.com/songquanpeng/one-api*/}
+            {/*</a>*/}
           </> : <>
             <div dangerouslySetInnerHTML={{ __html: about}}></div>
           </>

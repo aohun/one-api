@@ -37,20 +37,24 @@ const Home = () => {
             <Card fluid>
               <Card.Content>
                 <Card.Header>系统信息</Card.Header>
-                <Card.Meta>系统信息总览</Card.Meta>
+                {/*<Card.Meta>系统信息总览</Card.Meta>*/}
                 <Card.Description>
-                  <p>名称：{statusState?.status?.system_name}</p>
-                  <p>版本：{statusState?.status?.version}</p>
-                  <p>
-                    源码：
-                    <a
-                      href='https://github.com/songquanpeng/one-api'
-                      target='_blank'
-                    >
-                      https://github.com/songquanpeng/one-api
-                    </a>
-                  </p>
-                  <p>启动时间：{getStartTimeString()}</p>
+                  <p>模型介绍：gpt-3.5-turbo	1 个汉字 ≈ 2 Quota</p>
+                  <p>付费方案：</p>
+                  <p>¥10 / 100k Quota (约 5 万字)</p>
+                  <p>¥40 / 600k Quota (约 30 万字)</p>
+                  {/*<p>名称：{statusState?.status?.system_name}</p>*/}
+                  {/*<p>版本：{statusState?.status?.version}</p>*/}
+                  {/*<p>*/}
+                  {/*  源码：*/}
+                  {/*  <a*/}
+                  {/*    href='https://github.com/songquanpeng/one-api'*/}
+                  {/*    target='_blank'*/}
+                  {/*  >*/}
+                  {/*    https://github.com/songquanpeng/one-api*/}
+                  {/*  </a>*/}
+                  {/*</p>*/}
+                  {/*<p>启动时间：{getStartTimeString()}</p>*/}
                 </Card.Description>
               </Card.Content>
             </Card>
@@ -59,32 +63,34 @@ const Home = () => {
             <Card fluid>
               <Card.Content>
                 <Card.Header>系统配置</Card.Header>
-                <Card.Meta>系统配置总览</Card.Meta>
+                {/*<Card.Meta>系统配置总览</Card.Meta>*/}
                 <Card.Description>
+                  <p>API Host: https://api.onepi.cn</p>
+
                   <p>
                     邮箱验证：
                     {statusState?.status?.email_verification === true
                       ? '已启用'
                       : '未启用'}
                   </p>
-                  <p>
-                    GitHub 身份验证：
-                    {statusState?.status?.github_oauth === true
-                      ? '已启用'
-                      : '未启用'}
-                  </p>
-                  <p>
-                    微信身份验证：
-                    {statusState?.status?.wechat_login === true
-                      ? '已启用'
-                      : '未启用'}
-                  </p>
-                  <p>
-                    Turnstile 用户校验：
-                    {statusState?.status?.turnstile_check === true
-                      ? '已启用'
-                      : '未启用'}
-                  </p>
+                {/*  <p>*/}
+                {/*    GitHub 身份验证：*/}
+                {/*    {statusState?.status?.github_oauth === true*/}
+                {/*      ? '已启用'*/}
+                {/*      : '未启用'}*/}
+                {/*  </p>*/}
+                {/*  <p>*/}
+                {/*    微信身份验证：*/}
+                {/*    {statusState?.status?.wechat_login === true*/}
+                {/*      ? '已启用'*/}
+                {/*      : '未启用'}*/}
+                {/*  </p>*/}
+                {/*  <p>*/}
+                {/*    Turnstile 用户校验：*/}
+                {/*    {statusState?.status?.turnstile_check === true*/}
+                {/*      ? '已启用'*/}
+                {/*      : '未启用'}*/}
+                {/*  </p>*/}
                 </Card.Description>
               </Card.Content>
             </Card>
