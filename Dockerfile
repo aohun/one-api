@@ -2,7 +2,7 @@ FROM node:16 as builder
 
 WORKDIR /build
 COPY ./web .
-COPY ./VERSION .
+#COPY ./VERSION .
 RUN npm install
 RUN REACT_APP_VERSION="0.2.0" npm run build
 
