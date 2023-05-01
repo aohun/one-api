@@ -16,10 +16,10 @@ const Footer = () => {
         {Footer === '' ? (
           <div className="custom-footer">
             <a
-              href="https://www.onepi.cn"
+              href="https://api.onepi.cn"
               target="_blank"
             >
-              One API {process.env.REACT_APP_VERSION}{' '}
+              OPEN API {process.env.REACT_APP_VERSION}{' '}
             </a>
             {/*由{' '}*/}
             {/*<a href="https://github.com/songquanpeng" target="_blank">*/}
