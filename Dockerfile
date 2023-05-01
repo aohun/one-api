@@ -4,7 +4,7 @@ WORKDIR /build
 COPY ./web .
 #COPY ./VERSION .
 RUN npm install
-RUN REACT_APP_VERSION="0.2.0" npm run build
+RUN REACT_APP_VERSION=0.2.0 npm run build
 
 FROM golang AS builder2
 
