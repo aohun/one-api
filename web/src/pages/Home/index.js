@@ -41,8 +41,8 @@ const Home = () => {
                 <Card.Description>
                   <p>模型介绍：gpt-3.5-turbo	1 个汉字 ≈ 2 Quota</p>
                   <p>付费方案：</p>
-                  <p>¥10 / 100k Quota (约 5 万字)</p>
-                  <p>¥40 / 600k Quota (约 30 万字)</p>
+                  <p>¥11 / 100k Quota (约 5 万字)</p>
+                  <p>¥45 / 800k Quota (约 40 万字)</p>
                   {/*<p>名称：{statusState?.status?.system_name}</p>*/}
                   {/*<p>版本：{statusState?.status?.version}</p>*/}
                   {/*<p>*/}
@@ -66,13 +66,23 @@ const Home = () => {
                 {/*<Card.Meta>系统配置总览</Card.Meta>*/}
                 <Card.Description>
                   <p>API Host: https://api.onepi.cn</p>
-
-                  <p>
-                    邮箱验证：
-                    {statusState?.status?.email_verification === true
-                      ? '已启用'
-                      : '未启用'}
+                  <p>API 用法参考
+                    {/*<a>参考官方文档</a>*/}
+                      <a
+                        href='https://platform.openai.com/docs/api-reference/chat/create'
+                        target='_blank'
+                      >
+                        官方文档
+                      </a>
                   </p>
+                  <p>API 令牌用于请求 Open API 提供的 接口, 注意防护避免泄露</p>
+                  <p>购买请添加微信: aohunwifi</p>
+                  {/*<p>*/}
+                  {/*  邮箱验证：*/}
+                  {/*  {statusState?.status?.email_verification === true*/}
+                  {/*    ? '已启用'*/}
+                  {/*    : '未启用'}*/}
+                  {/*</p>*/}
                 {/*  <p>*/}
                 {/*    GitHub 身份验证：*/}
                 {/*    {statusState?.status?.github_oauth === true*/}
